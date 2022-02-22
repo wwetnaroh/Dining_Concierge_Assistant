@@ -7,7 +7,7 @@ Customer Service is a core service for a lot of businesses around the world and 
 
 Link to chatbot: http://coms6998hw1.com.s3-website-us-east-1.amazonaws.com
 
-Demo video of the chatbot: https://youtu.be/zDQ_O89yMks
+Demo video of the chatbot: https://youtu.be/7vMOjHx9xTM
 
 Directory Details
 1) /frontend: Frontend Code with updated SDK generated via API Gateway
