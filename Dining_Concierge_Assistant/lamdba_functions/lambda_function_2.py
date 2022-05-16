@@ -11,7 +11,7 @@ def lambda_handler(event, context):
 	# Polling from queue
 	sqs_client = boto3.client('sqs')
 
-	queue_url = "https://sqs.us-east-1.amazonaws.com/257520041141/DiningMessage"
+	queue_url = "queue_url"
 	client = boto3.client('sqs')
 	queues = client.list_queues(QueueNamePrefix='DiningMessage')
 	test_queue_url = queues['QueueUrls'][0]
@@ -53,10 +53,10 @@ def lambda_handler(event, context):
 	print("Message deleted successfully ")
 
     # Get restaurant id from open search
-	open_search_host = 'https://search-dining-ttrbawij53c7epazdmj3uocecm.us-east-1.es.amazonaws.com'
+	open_search_host = 'open_search_host_url'
 	index = 'restaurants'
 	url = open_search_host + '/' + index + '/_search'
-	aws_auth = ('admin', 'Coms6998!')
+	aws_auth = ('', '')
 	headers = {"Content-Type": "application/json"}
 	# print("The url is: " + str(url))
 
